@@ -1,0 +1,335 @@
+@import url('https://fonts.googleapis.com/css2?family= Poppins:ital,wght@0,700;1,400 & display = swap');
+@import url('https://fonts.googleapis.com/css2?family= Kanit & display = swap');
+
+* {
+    padding: 0;
+    margin: 0 auto;
+}
+
+html, body {
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    background-color: #121111;
+}
+
+main, form, #login_IEL-RR {
+    height: 100%;
+}
+
+/* -----------------------GERAL------------------------ */
+
+#login_IEL-RR {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+/* ----------------------LADO ESQUERDO------------------- */
+
+#left {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+}
+
+
+.logo_login {
+    padding-top: 50px;
+    width: 200px;
+    height: 100px;
+}
+
+.box_login {
+    width: 400px;
+    height: 350px;
+    background-color: #24221F;
+    border-radius: 5px;
+}
+
+.content-box_login {
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+    margin: 50px;
+}
+
+.titulo_boxgeral {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+}
+
+.titulo_box {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    gap: 5px;
+}
+
+.titulo_box img {
+    margin: 0px;
+}
+
+
+.titulo_box h1 {
+    font-family: 'Kanit';
+    font-size: 26px;
+    margin: 0px;
+    font-weight: normal;
+}
+
+.titulo_boxgeral p {
+    color: #8d8d8d;
+    font-size: small;
+}
+
+.inputs_box {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.input {
+    display: flex;
+    flex-direction: column;
+}
+
+.input_login {
+    color: #ffffff;
+    font-size: 15px;
+    font-family: 'Kanit';
+    padding: 5px 110px 5px 20px;
+    box-sizing: border-box;
+    border: unset;
+    outline: none;
+    background: transparent;
+}
+
+.border_input {
+    height: 1px;
+    width: 100%;
+    margin-bottom: 16px;
+    background-color: #cfcfcf;
+    transition: .3s ease-in-out;
+}
+
+.input_button {
+    font-family: 'Kanit';
+    font-size: 16px;
+    color: #ffffff;
+    padding: 5px 40px;
+    border: unset;
+    border-radius: 3px;
+    background: #0464ac;
+}
+
+.input_user {
+    background-image: url(./assets/icons/icon_email.svg);
+    background-repeat: no-repeat;
+    background-position: 93%;
+}
+
+.input_password {
+    background-image: url(./assets/icons/icon_password.svg);
+    background-repeat: no-repeat;
+    background-position: 93%;
+
+}
+
+
+.direitos_login {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+    color: #ffffff;
+    padding-bottom: 15px;
+    font-family: 'Kanit';
+    font-size: 15px;
+}
+
+
+/* -----------------------LADO DIREITO------------------- */
+
+#right {
+    width: 100%;
+}
+
+#right img {
+    width: 900px;
+    height: 100%;
+}
+
+/* -------------RESPONSIVIDADE---------- */
+
+@media (max-width: 600px) {
+
+    #right {
+        display: none;
+    }
+
+    #left {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    .logo_login {
+        padding-top: 25px;
+        width: 130px;
+        height: 65px;
+    }
+
+    .box_login {
+        width: 320px;
+        height: 350px;
+    }
+
+    .titulo_box h1 {
+        font-size: 20px;
+    }
+
+    .titulo_boxgeral p {
+        padding-left: 15px;
+        font-size: 11px;
+    }
+
+    .direitos_login {
+        font-size: 13px;
+    }
+
+}
+
+@media (max-width: 830px) {
+
+    #right {
+        display: none;
+    }
+
+    #left {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    .logo_login {
+        padding-top: 25px;
+        width: 130px;
+        height: 65px;
+    }
+
+    .box_login {
+        margin: 0px 40px;
+        width: 320px;
+        height: 350px;
+    }
+
+    .titulo_box h1 {
+        font-size: 20px;
+    }
+
+    .titulo_boxgeral p {
+        padding-left: 15px;
+        font-size: 11px;
+    }
+
+    .direitos_login {
+        font-size: 13px;
+    }
+
+}
+
+@media (max-width: 1300px) {
+
+    #left {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    .logo_login {
+        padding-top: 25px;
+        width: 130px;
+        height: 65px;
+    }
+
+    .box_login {
+        margin: 0px 40px;
+        width: 320px;
+        height: 350px;
+    }
+
+    .titulo_box h1 {
+        font-size: 20px;
+    }
+
+    .titulo_boxgeral p {
+        padding-left: 15px;
+        font-size: 11px;
+    }
+
+    .direitos_login {
+        font-size: 13px;
+    }
+
+}
+
+@media (max-width: 1365px) {
+
+    #left {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    .logo_login {
+        padding-top: 25px;
+        width: 130px;
+        height: 65px;
+    }
+
+    .box_login {
+        margin: 0px 40px;
+        width: 320px;
+        height: 350px;
+    }
+
+    .titulo_box h1 {
+        font-size: 20px;
+    }
+
+    .titulo_boxgeral p {
+        padding-left: 15px;
+        font-size: 11px;
+    }
+
+    .input_user {
+        background-image: url(./assets/icons/icon_email.svg);
+        background-repeat: no-repeat;
+        background-position: 67%;
+    }
+
+    .input_password {
+        background-image: url(./assets/icons/icon_password.svg);
+        background-repeat: no-repeat;
+        background-position: 67%;
+
+    }
+
+    .direitos_login {
+        font-size: 13px;
+    }
+
+}
