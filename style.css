@@ -19,7 +19,7 @@ body {
     background-color: #121111;
 }
 
-main, form, #login_IEL-RR {
+main, container, #login_IEL-RR {
     height: 100%;
 }
 
@@ -109,7 +109,7 @@ main, form, #login_IEL-RR {
     color: #ffffff;
     font-size: 15px;
     font-family: 'Kanit';
-    padding: 5px 110px 5px 20px;
+    padding: 5px 85px 5px 5px;
     box-sizing: border-box;
     border: unset;
     outline: none;
@@ -121,6 +121,22 @@ main, form, #login_IEL-RR {
     width: 100%;
     margin-bottom: 16px;
     background-color: #cfcfcf;
+    transition: .3s ease-in-out;
+}
+
+.border_input_sucess {
+    height: 1px;
+    width: 100%;
+    margin-bottom: 16px;
+    background-color: #01ff06;
+    transition: .3s ease-in-out;
+}
+
+.border_input_error {
+    height: 1px;
+    width: 100%;
+    margin-bottom: 16px;
+    background-color: #ff0000;
     transition: .3s ease-in-out;
 }
 
@@ -199,6 +215,14 @@ main, form, #login_IEL-RR {
         height: 350px;
     }
 
+    .input_login {
+        padding: 5px 20px 5px 5px;
+    }
+
+    .input_user, .input_password {
+        background-position: 100%;
+    }
+
     .titulo_box h1 {
         font-size: 20px;
     }
@@ -239,6 +263,14 @@ main, form, #login_IEL-RR {
         height: 350px;
     }
 
+    .input_login {
+        padding: 5px 20px 5px 5px;
+    }
+
+    .input_user, .input_password {
+        background-position: 100%;
+    }
+
     .titulo_box h1 {
         font-size: 20px;
     }
@@ -273,6 +305,14 @@ main, form, #login_IEL-RR {
         margin: 0px 40px;
         width: 320px;
         height: 350px;
+    }
+
+    .input_login {
+        padding: 5px 20px 5px 5px;
+    }
+
+    .input_user, .input_password {
+        background-position: 100%;
     }
 
     .titulo_box h1 {
@@ -311,6 +351,8 @@ main, form, #login_IEL-RR {
         height: 350px;
     }
 
+
+
     .titulo_box h1 {
         font-size: 20px;
     }
@@ -324,14 +366,12 @@ main, form, #login_IEL-RR {
         background-image: url(./assets/icons/icon-user1.svg);
         background-size: 20px;
         background-repeat: no-repeat;
-        background-position: 67%;
     }
 
     .input_password {
         background-image: url(./assets/icons/icon_pass.svg);
         background-size: 20px;
         background-repeat: no-repeat;
-        background-position: 67%;
 
     }
 
