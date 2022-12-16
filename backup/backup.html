@@ -11,8 +11,8 @@
         <link rel="icon" href="./assets/icons/favicon-iel.svg" alt="icone do site">
         <link rel=" folha de estilo "
             href=" https://fonts.googleapis.com/css2?family=Roboto:wght@300;700&display=swap ">
-        <link rel="stylesheet" href="./style.css">
-        <script src="./main.js" defer></script>
+        <link rel="stylesheet" href="./backup.css">
+        <script src="./backup.js" defer></script>
     </head>
 
     <body>
@@ -34,22 +34,13 @@
 
                                 <form method="post" action="$PORTAL_ACTION$" id="inputs_box" class="inputs_box">
 
-                                    <div class="input">
-                                        <input class="input_user input_login" type="text" autocomplete="off"
-                                            name="auth_user" id="user" required>
-                                        <label>User</label>
-                                        <span id="border_user" class="border_input"></span>
-                                    </div>
-
-                                    <div class="input">
-                                        <input class="input_password input_login" type="password" autocomplete="off"
-                                            name="auth_password" id="password" required>
-                                        <label>Password</label>
-                                        <span id="border_password" class="border_input "></span>
-                                    </div>
-
-                                    <button class="input_button" type="submit" name="accept"
-                                        value="Continue">Continue</button>
+                                    <input class="input_user input_login" type="text" autocomplete="off"
+                                        name="auth_user" id="user" placeholder="Usuário" required>
+                                    <span id="border_user" class="border_input"></span>
+                                    <input class="input_password input_login" type="password" autocomplete="off"
+                                        name="auth_password" id="password" placeholder="Senha" required>
+                                    <span id="border_password" class="border_input "></span>
+                                    <input class="input_button" type="submit" name="accept" value="Continue">
                                     <input name="redirurl" type="hidden" value="$PORTAL_REDIRURL$">
                                     <input name="zone" type="hidden" value="$PORTAL_ZONE$">
                                 </form>
