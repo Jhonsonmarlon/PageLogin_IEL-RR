@@ -9,6 +9,10 @@
     margin: 0 auto;
 }
 
+*[hidden] {
+    display: none;
+}
+
 html, body {
     overflow: hidden;
     width: 100%;
@@ -117,19 +121,27 @@ input {
     border-bottom: 1px solid #8d8d8d;
     background-color: transparent;
     padding: 5px 85px 5px 5px;
+    color: #ffffff;
 
     outline: none;
+
+    background-image: url(./assets/icons/user-icon.svg);
+    background-repeat: no-repeat;
+    background-position: 100%;
+    background-position-y: -4px;
 
 }
 
 input~label {
     position: absolute;
     left: 0;
+    top: -8px;
     transition: .5s;
 }
 
+
 input:focus~label, input:valid~label {
-    transform: translate(-20px);
+    transform: translateY(-10px);
     font-size: 0.8em;
     letter-spacing: 0.1em;
 }
@@ -195,9 +207,6 @@ input:focus~label, input:valid~label {
     background-position: 93%;
 
 } */
-
-
-
 
 .direitos_login {
     display: flex;

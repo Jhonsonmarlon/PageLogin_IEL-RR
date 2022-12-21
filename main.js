@@ -1,47 +1,70 @@
-const form = document.getElementById('inputs_box')
-const user = document.getElementById('user')
-const password = document.getElementById('password')
+// const form = document.getElementById('inputs_box')
+// const user = document.getElementById('user')
+// const password = document.getElementById('password')
 
-form.addEventListener('submit', (e) => {
-    e.preventDefault()
+// form.addEventListener('submit', (e) => {
+//     e.preventDefault()
 
-    checkInputs()
-})
+//     checkInputs()
+// })
 
-function checkInputs() {
+// function checkInputs() {
 
-    const userValue = user.value.trim()
-    const passwordValue = password.value.trim()
+//     const userValue = user.value.trim()
+//     const passwordValue = password.value.trim()
 
-    if (userValue === ''){
-        setErrorFor(user)
-    } else {
-        setSucessFor(user)
-    }
+//     if (userValue === ''){
+//         setErrorFor(user)
+//     } else {
+//         setSucessFor(user)
+//     }
 
-    if (passwordValue === ''){
-        setErrorFor(password)
-    } else {
-        setSucessFor(password)
-    }
-}
+//     if (passwordValue === ''){
+//         setErrorFor(password)
+//     } else {
+//         setSucessFor(password)
+//     }
+// }
 
-function setErrorFor(input){
-    if (input === user){
-        const border =  document.getElementsById('border_user')
-        border.className = 'border_input_error'
-    } else if (input === password) {
-        const border =  document.getElementsById('border_password')
-        border.className = 'border_input_error'
-    }
-}
+// function setErrorFor(input){
+//     if (input === user){
+//         const border =  document.getElementsById('border_user')
+//         border.className = 'border_input_error'
+//     } else if (input === password) {
+//         const border =  document.getElementsById('border_password')
+//         border.className = 'border_input_error'
+//     }
+// }
 
-function setSucessFor(input){
-    if (input === user){
-        const border =  document.getElementsById('border_user')
-        border.className = 'border_input_sucess'
-    } else if (input === password) {
-        const border =  document.getElementsById('border_password')
-        border.className = 'border_input_sucess'
-    }
-}
+// function setSucessFor(input){
+//     if (input === user){
+//         const border =  document.getElementsById('border_user')
+//         border.className = 'border_input_sucess'
+//     } else if (input === password) {
+//         const border =  document.getElementsById('border_password')
+//         border.className = 'border_input_sucess'
+//     }
+// }
+
+
+// -------------------------------------------------
+
+
+// var input_login = document.getElementsByClassName('input_login');
+// var label = document.getElementsByClassName('label');
+
+// label.addEventListener ('focus', function ativaInput(){
+//     input_login.focus = true;
+// });
+
+// function ativaInput(){
+//     const input = document.querySelector('#user')
+//     input.disabled = false;
+//     input.focus = true;
+
+// }
+
+
+
+
+
