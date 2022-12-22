@@ -11,7 +11,11 @@
         <link rel="icon" href="./assets/icons/favicon-iel.svg" alt="icone do site">
         <link rel=" folha de estilo "
             href=" https://fonts.googleapis.com/css2?family=Roboto:wght@300;700&display=swap ">
-        <link rel="stylesheet" href="./style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,400;0,500;0,900;1,400;1,900&display=swap"
+            rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="./style.css">
         <script src="./main.js" defer></script>
     </head>
 
@@ -26,10 +30,10 @@
                             <div class="content-box_login">
                                 <div class="titulo_boxgeral">
                                     <div class="titulo_box">
-                                        <img src="./assets/icons/icon_login.svg" alt="icon_login">
+                                        <img src="./assets/icons/icon_login.svg" alt=" icon_login">
                                         <h1>Faça seu login</h1>
                                     </div>
-                                    <p class="legenda_titulo_box">Entre com suas informações de cadastro.</p>
+                                    <p class=" legenda_titulo_box">Entre com suas informações de cadastro.</p>
                                 </div>
 
                                 <form method="post" action="$PORTAL_ACTION$" id="inputs_box" class="inputs_box">
@@ -48,8 +52,8 @@
                                         <span id="border_password" class="border_input "></span>
                                     </div>
 
-                                    <button class="input_button" type="submit" name="accept"
-                                        value="Continue">Continue</button>
+                                    <input onfocus="checkInputs()" class="input_button" type="submit" name="accept"
+                                        value="Continue"></input>
                                     <input name="redirurl" type="hidden" value="$PORTAL_REDIRURL$">
                                     <input name="zone" type="hidden" value="$PORTAL_ZONE$">
                                 </form>

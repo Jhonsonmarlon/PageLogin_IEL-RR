@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family= Kanit & display = swap');
+@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,400;0,500;0,900;1,400;1,900&display=swap');
 
 /* <!-- Author: Jhonson Marlon -->
  <!-- Supervisão: Antonio Neiva  --> */
@@ -20,6 +21,9 @@ html, body {
 }
 
 body {
+    background-image: url(./assets/bg/cool-background2.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
     background-color: #121111;
 }
 
@@ -54,8 +58,10 @@ main, container, #login_IEL-RR {
 .box_login {
     width: 400px;
     height: 350px;
-    background-color: #24221F;
+    background-color: #24221fb4;
     border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+
 }
 
 .content-box_login {
@@ -64,15 +70,18 @@ main, container, #login_IEL-RR {
     flex-direction: column;
     gap: 60px;
     margin: 50px;
+
 }
 
 .titulo_boxgeral {
     display: flex;
     flex-direction: column;
+    align-items: flex-start;
     margin: 0;
 }
 
 .titulo_box {
+    padding-left: 8px;
     width: 100%;
     display: flex;
     flex-direction: row;
@@ -86,14 +95,15 @@ main, container, #login_IEL-RR {
 
 
 .titulo_box h1 {
-    font-family: 'Kanit';
+    font-family: 'Jost', sans-serif;
     font-size: 26px;
     margin: 0px;
     font-weight: normal;
 }
 
 .titulo_boxgeral p {
-    color: #8d8d8d;
+    font-family: 'Jost';
+    color: #c2c2c2;
     font-size: small;
 }
 
@@ -117,11 +127,7 @@ input {
     -webkit-appearance: none;
     appearance: none;
 
-    border: none;
-    border-bottom: 1px solid #8d8d8d;
-    background-color: transparent;
-    padding: 5px 85px 5px 5px;
-    color: #ffffff;
+
 
     outline: none;
 
@@ -131,6 +137,31 @@ input {
     background-position-y: -4px;
 
 }
+
+.input_login {
+    border: none;
+    border-bottom: 1px solid #8d8d8d;
+    background-color: transparent;
+    padding: 5px 85px 5px 5px;
+    color: #ffffff;
+}
+
+.border_login_sucess {
+    border: none;
+    border-bottom: 1px solid #ff0000;
+    background-color: transparent;
+    padding: 5px 85px 5px 5px;
+    color: #ffffff;
+}
+
+.border_login_error {
+    border: none;
+    border-bottom: 1px solid #00ff33;
+    background-color: transparent;
+    padding: 5px 85px 5px 5px;
+    color: #ffffff;
+}
+
 
 input~label {
     position: absolute;
@@ -147,66 +178,33 @@ input:focus~label, input:valid~label {
 }
 
 .input_button {
-    font-family: 'Kanit';
+    cursor: pointer;
+    font-family: 'Jost';
     font-size: 16px;
     color: #ffffff;
     padding: 5px 40px;
     border: unset;
     border-radius: 3px;
     background: #0464ac;
+    box-shadow: rgba(138, 138, 138, 0.3) 0px 19px 38px, rgba(98, 98, 98, 0.22) 0px 15px 12px;
 }
 
-/*
-
-.input_login {
-    color: #ffffff;
-    font-size: 15px;
-    font-family: 'Kanit';
-    padding: 5px 85px 5px 5px;
-    box-sizing: border-box;
-    border: unset;
-    outline: none;
-    background: transparent;
-}
-
-.border_input {
-    height: 1px;
-    width: 100%;
-    margin-bottom: 16px;
-    background-color: #cfcfcf;
-    transition: .3s ease-in-out;
-}
-
-.border_input_sucess {
-    height: 1px;
-    width: 100%;
-    margin-bottom: 16px;
-    background-color: #01ff06;
-    transition: .3s ease-in-out;
-}
-
-.border_input_error {
-    height: 1px;
-    width: 100%;
-    margin-bottom: 16px;
-    background-color: #ff0000;
-    transition: .3s ease-in-out;
-}
 
 .input_user {
     background-image: url(./assets/icons/icon-user1.svg);
     background-size: 20px;
     background-repeat: no-repeat;
-    background-position: 93%;
+    background-position: 99%;
+    background-position-y: 0px;
 }
 
 .input_password {
     background-image: url(./assets/icons/icon_pass.svg);
     background-size: 20px;
     background-repeat: no-repeat;
-    background-position: 93%;
-
-} */
+    background-position: 99%;
+    background-position-y: 0px;
+}
 
 .direitos_login {
     display: flex;
@@ -215,24 +213,24 @@ input:focus~label, input:valid~label {
     gap: 5px;
     color: #ffffff;
     padding-bottom: 15px;
-    font-family: 'Kanit';
-    font-size: 15px;
+    font-family: 'Jost';
+    font-size: 13px;
 }
 
 
 /* -----------------------LADO DIREITO------------------- */
 
 #right {
-    width: 100%;
+    width: 200%;
 }
 
 #right img {
-    width: 900px;
+    width: 100%;
     height: 100%;
 }
 
 /* -------------RESPONSIVIDADE---------- */
-/* 
+
 @media (max-width: 600px) {
 
     #right {
@@ -240,6 +238,9 @@ input:focus~label, input:valid~label {
     }
 
     #left {
+        background-image: url(./assets/bg/cool-background.png);
+        background-repeat: repeat;
+        background-size: 125%;
         display: flex;
         flex-direction: column;
         justify-content: space-evenly;
@@ -287,6 +288,65 @@ input:focus~label, input:valid~label {
     }
 
     #left {
+        background-image: url(./assets/bg/cool-background.png);
+        background-repeat: no-repeat;
+        background-size: 125%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    .logo_login {
+        padding-top: 25px;
+        width: 130px;
+        height: 65px;
+    }
+
+    .box_login {
+        margin: 0px 40px;
+        width: 320px;
+        height: 350px;
+    }
+
+    .input_login {
+        padding: 5px 20px 5px 5px;
+    }
+
+    .input_user, .input_password {
+        background-position: 100%;
+    }
+
+    .titulo_box h1 {
+        font-size: 20px;
+    }
+
+    .titulo_boxgeral p {
+        padding-left: 15px;
+        font-size: 11px;
+    }
+
+    .direitos_login {
+        font-size: 13px;
+    }
+
+}
+
+@media (max-width: 1000px) {
+
+    #right {
+        display: none;
+    }
+
+
+    body {
+        background-image: none;
+    }
+
+    #left {
+        background-image: url(./assets/bg/cool-background.png);
+        background-repeat: no-repeat;
+        background-size: 125%;
         display: flex;
         flex-direction: column;
         justify-content: space-evenly;
@@ -330,7 +390,14 @@ input:focus~label, input:valid~label {
 
 @media (max-width: 1300px) {
 
+    body {
+        background-image: none;
+    }
+
     #left {
+        background-image: url(./assets/bg/cool-background.png);
+        background-repeat: no-repeat;
+        background-size: 125%;
         display: flex;
         flex-direction: column;
         justify-content: space-evenly;
@@ -372,9 +439,13 @@ input:focus~label, input:valid~label {
 
 }
 
-@media (max-width: 1365px) {
+@media (max-width: 1385px) {
+
 
     #left {
+        background-image: url(./assets/bg/cool-background.png);
+        background-repeat: no-repeat;
+        background-size: 125%;
         display: flex;
         flex-direction: column;
         justify-content: space-evenly;
@@ -393,6 +464,13 @@ input:focus~label, input:valid~label {
         height: 350px;
     }
 
+    .input_login {
+        padding: 5px 20px 5px 5px;
+    }
+
+    .input_user, .input_password {
+        background-position: 100%;
+    }
 
 
     .titulo_box h1 {
@@ -421,4 +499,4 @@ input:focus~label, input:valid~label {
         font-size: 13px;
     }
 
-} */
+}
