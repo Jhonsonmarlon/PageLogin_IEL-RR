@@ -42,10 +42,14 @@ main, container, #login_IEL-RR {
 /* ----------------------LADO ESQUERDO------------------- */
 
 #left {
+    background-image: url(./assets/bg/cool-background.png);
+    background-repeat: no-repeat;
+    background-size: 125%;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: space-evenly;
     width: 100%;
+    align-items: center;
 }
 
 
@@ -90,6 +94,7 @@ main, container, #login_IEL-RR {
 }
 
 .titulo_box img {
+    width: 30px;
     margin: 0px;
 }
 
@@ -102,6 +107,7 @@ main, container, #login_IEL-RR {
 }
 
 .titulo_boxgeral p {
+    padding-left: 12px;
     font-family: 'Jost';
     color: #c2c2c2;
     font-size: small;
@@ -131,10 +137,10 @@ input {
 
     outline: none;
 
-    background-image: url(./assets/icons/user-icon.svg);
+    /* background-image: url(./assets/icons/user-icon.svg);
     background-repeat: no-repeat;
     background-position: 100%;
-    background-position-y: -4px;
+    background-position-y: -4px; */
 
 }
 
@@ -164,6 +170,7 @@ input {
 
 
 input~label {
+    font-family: 'Jost';
     position: absolute;
     left: 0;
     top: -8px;
@@ -191,19 +198,19 @@ input:focus~label, input:valid~label {
 
 
 .input_user {
-    background-image: url(./assets/icons/icon-user1.svg);
-    background-size: 20px;
+    background-image: url(./assets/icons/iconofc.svg);
+    background-size: 23px;
     background-repeat: no-repeat;
     background-position: 99%;
-    background-position-y: 0px;
+    background-position-y: -2px;
 }
 
 .input_password {
-    background-image: url(./assets/icons/icon_pass.svg);
-    background-size: 20px;
+    background-image: url(./assets/icons/iconofc2.svg);
+    background-size: 23px;
     background-repeat: no-repeat;
     background-position: 99%;
-    background-position-y: 0px;
+    background-position-y: -2px;
 }
 
 .direitos_login {
@@ -441,7 +448,6 @@ input:focus~label, input:valid~label {
 
 @media (max-width: 1385px) {
 
-
     #left {
         background-image: url(./assets/bg/cool-background.png);
         background-repeat: no-repeat;
@@ -483,13 +489,13 @@ input:focus~label, input:valid~label {
     }
 
     .input_user {
-        background-image: url(./assets/icons/icon-user1.svg);
+        background-image: url(./assets/icons/iconofc.svg);
         background-size: 20px;
         background-repeat: no-repeat;
     }
 
     .input_password {
-        background-image: url(./assets/icons/icon_pass.svg);
+        background-image: url(./assets/icons/iconofc2.svg);
         background-size: 20px;
         background-repeat: no-repeat;
 
