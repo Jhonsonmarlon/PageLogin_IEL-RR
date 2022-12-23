@@ -5,20 +5,23 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <!-- Author: Jhonson Marlon -->
+        <!-- Autor: Jhonson Marlon -->
         <!-- Supervisão: Antonio Neiva  -->
         <title>IEL- Portal de login</title>
         <link rel="icon" href="./assets/icons/favicon-iel.svg" alt="icone do site">
-        <link rel="stylesheet" href="./style.css">
+        <link rel=" folha de estilo "
+            href=" https://fonts.googleapis.com/css2?family=Roboto:wght@300;700&display=swap ">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,400;0,500;0,900;1,400;1,900&display=swap"
+            rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="./style.css">
+        <script src="./main.js" defer></script>
     </head>
 
     <body>
         <main>
-            <form method="post" action="$PORTAL_ACTION$">
-
-                <input name="redirurl" type="hidden" value="$PORTAL_REDIRURL$">
-                <input name="zone" type="hidden" value="$PORTAL_ZONE$">
-
+            <container>
                 <div id="login_IEL-RR">
                     <div id="left">
                         <img class="logo_login" src="./assets/img/logo_ielrr_branco.png" alt="logo_IEL-RR">
@@ -26,21 +29,33 @@
                             <div class="content-box_login">
                                 <div class="titulo_boxgeral">
                                     <div class="titulo_box">
-                                        <img src="./assets/icons/icon_login.svg" alt="icon_login">
+                                        <img src="./assets/icons/iconofc3.svg" alt=" icon_login">
                                         <h1>Faça seu login</h1>
                                     </div>
-                                    <p class="legenda_titulo_box">Entre com suas informações de cadastro.</p>
+                                    <p class=" legenda_titulo_box">Entre com suas informações de cadastro.</p>
                                 </div>
 
-                                <div class="inputs_box">
-                                    <input class="input_user input_login" type="text" name="auth_user" id="user"
-                                        placeholder="Usuário">
-                                    <span class="border_input"></span>
-                                    <input class="input_password input_login" type="password" name="auth_password"
-                                        id="password" placeholder="Senha">
-                                    <span class="border_input"></span>
-                                    <input class="input_button" type="submit" name="accept" value="Continue">
-                                </div>
+                                <form method="post" action="$PORTAL_ACTION$" id="inputs_box" class="inputs_box">
+
+                                    <div class="input">
+                                        <input class="input_user input_login" type="text" autocomplete="off"
+                                            name="auth_user" id="user" required>
+                                        <label class="label" onclick="ativaInput()">Usuário</label>
+                                        <span id="border_user" class="border_input"></span>
+                                    </div>
+
+                                    <div class="input">
+                                        <input class="input_password input_login" type="password" autocomplete="off"
+                                            name="auth_password" id="password" required>
+                                        <label class="label" onclick="ativaInput()">Senha</label>
+                                        <span id="border_password" class="border_input "></span>
+                                    </div>
+
+                                    <input onfocus="checkInputs()" class="input_button" type="submit" name="accept"
+                                        value="Continue"></input>
+                                    <input name="redirurl" type="hidden" value="$PORTAL_REDIRURL$">
+                                    <input name="zone" type="hidden" value="$PORTAL_ZONE$">
+                                </form>
                             </div>
                         </div>
 
@@ -53,7 +68,7 @@
                         <img src="./assets/img/bg_ielrr.jpg" alt="Imagem empresa IEL-RR">
                     </div>
                 </div>
-            </form>
+            </container>
         </main>
     </body>
 
