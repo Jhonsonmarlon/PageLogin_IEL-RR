@@ -198,7 +198,7 @@ input:focus~label, input:valid~label {
 
 
 .input_user {
-    background-image: url(./assets/icons/iconofc.svg);
+    background-image: url(./assets/icons/iconofc-user.svg);
     background-size: 23px;
     background-repeat: no-repeat;
     background-position: 99%;
@@ -206,7 +206,7 @@ input:focus~label, input:valid~label {
 }
 
 .input_password {
-    background-image: url(./assets/icons/iconofc2.svg);
+    background-image: url(./assets/icons/iconofc2-password.svg);
     background-size: 23px;
     background-repeat: no-repeat;
     background-position: 99%;
@@ -489,13 +489,13 @@ input:focus~label, input:valid~label {
     }
 
     .input_user {
-        background-image: url(./assets/icons/iconofc.svg);
+        background-image: url(./assets/icons/iconofc-user.svg);
         background-size: 20px;
         background-repeat: no-repeat;
     }
 
     .input_password {
-        background-image: url(./assets/icons/iconofc2.svg);
+        background-image: url(./assets/icons/iconofc2-password.svg);
         background-size: 20px;
         background-repeat: no-repeat;
 

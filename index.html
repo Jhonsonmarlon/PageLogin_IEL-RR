@@ -16,7 +16,6 @@
         <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,400;0,500;0,900;1,400;1,900&display=swap"
             rel="stylesheet">
         <link rel="stylesheet" type="text/css" href="./style.css">
-        <script src="./main.js" defer></script>
     </head>
 
     <body>
@@ -29,7 +28,7 @@
                             <div class="content-box_login">
                                 <div class="titulo_boxgeral">
                                     <div class="titulo_box">
-                                        <img src="./assets/icons/iconofc3.svg" alt=" icon_login">
+                                        <img src="./assets/icons/iconofc3-login.svg" alt=" icon_login">
                                         <h1>Faça seu login</h1>
                                     </div>
                                     <p class=" legenda_titulo_box">Entre com suas informações de cadastro.</p>
@@ -40,19 +39,18 @@
                                     <div class="input">
                                         <input class="input_user input_login" type="text" autocomplete="off"
                                             name="auth_user" id="user" required>
-                                        <label class="label" onclick="ativaInput()">Usuário</label>
+                                        <label class="label">Usuário</label>
                                         <span id="border_user" class="border_input"></span>
                                     </div>
 
                                     <div class="input">
                                         <input class="input_password input_login" type="password" autocomplete="off"
                                             name="auth_password" id="password" required>
-                                        <label class="label" onclick="ativaInput()">Senha</label>
+                                        <label class="label">Senha</label>
                                         <span id="border_password" class="border_input "></span>
                                     </div>
 
-                                    <input onfocus="checkInputs()" class="input_button" type="submit" name="accept"
-                                        value="Continue"></input>
+                                    <input class="input_button" type="submit" name="accept" value="Continue"></input>
                                     <input name="redirurl" type="hidden" value="$PORTAL_REDIRURL$">
                                     <input name="zone" type="hidden" value="$PORTAL_ZONE$">
                                 </form>
